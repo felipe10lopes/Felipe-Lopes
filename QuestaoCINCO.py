@@ -2,7 +2,6 @@
 def main():
     return a[::-1]
 
-
 a = int(input())
 a = str(a)
 

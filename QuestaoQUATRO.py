@@ -6,12 +6,10 @@ def quant_horas(minutos):
 def quant_min(minutos):
     return minutos % 60
 
-
 minutos = int(input())
 
 x = quant_horas(minutos)
 y = quant_min(minutos)
-
 
 
 print(f"{x}:{y}")
