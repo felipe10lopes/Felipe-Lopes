@@ -1,20 +1,20 @@
 
-def main():
-    return a[::-1]
+
+def quant_horas(minutos):
+    return minutos // 60
+
+def quant_min(minutos):
+    return minutos % 60
 
 
-a = int(input())
-a = str(a)
+minutos = int(input())
 
-print(a[::-1])
-
-if  __name__ == '__main__':
-    main()
+x = quant_horas(minutos)
+y = quant_min(minutos)
 
 
 
-
-
+print(f"{x}:{y}")
 
 
 
