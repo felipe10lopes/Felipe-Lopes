@@ -1,25 +1,13 @@
-
-def percentual(valor,porcentagem):
-    return valor * (porcentagem / 100)
-
-def percentual_acrescimo(valor,percentual):
-    return valor + percentual
-
-valor = float(input())
-porcentagem = float(input())
-
-y = percentual(valor,porcentagem)
-
-z = percentual_acrescimo(valor,porcentagem)
-
-print(f"{y+valor:.2f}")
-
-print(f"{valor-y:.2f}")
+letra = input()
 
 
+letra = letra.lower()
 
-
-
-
-
-
+if ( letra=='b' or letra=='c' or letra=='d' or letra=='f'
+    or letra=='g' or letra=='h' or letra=='j' or letra=='k' or letra=='l'
+    or letra=='m' or letra=='n' or letra=='p' or letra=='q' or letra=='r'
+    or letra=='s' or letra=='t' or letra=='v' or letra=='w' or letra=='x'
+    or letra=='y' or letra=='z'):
+    print(True)
+else:
+    print(False)
