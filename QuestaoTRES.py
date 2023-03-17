@@ -1,13 +1,16 @@
-letra = input()
 
+def consoante(letra):
+    letra = letra.lower()
+    if letra in ('b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n',
+            'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z'):
+        return True
+    else:
+        return False
 
-letra = letra.lower()
+def main():
+    letra = input()
+    x = consoante(letra)
+    print(x)
 
-if ( letra=='b' or letra=='c' or letra=='d' or letra=='f'
-    or letra=='g' or letra=='h' or letra=='j' or letra=='k' or letra=='l'
-    or letra=='m' or letra=='n' or letra=='p' or letra=='q' or letra=='r'
-    or letra=='s' or letra=='t' or letra=='v' or letra=='w' or letra=='x'
-    or letra=='y' or letra=='z'):
-    print(True)
-else:
-    print(False)
+if  __name__ == '__main__':
+    main()

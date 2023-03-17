@@ -1,19 +1,21 @@
-letra = input()
 
 
-letra = letra.lower()
+def letra_numero(letra):
+    letra = letra.lower()
+    if letra in ('a','b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
+            'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'):
+        return True
 
-if (letra=='a' or letra=='b' or letra=='c' or letra=='d' or letra=='e' or letra=='f'
-    or letra=='g' or letra=='h' or letra=='i' or letra=='j' or letra=='k' or letra=='l'
-    or letra=='m' or letra=='n' or letra=='o' or letra=='p' or letra=='q' or letra=='r'
-    or letra=='s' or letra=='t' or letra=='u' or letra=='v' or letra=='w' or letra=='x'
-    or letra=='y' or letra=='z'):
-    print(True)
+    elif letra in ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9'):
+        return True
+    
+    else:
+        return False
 
-elif (letra=='0' or letra=='1' or letra=='2' or letra=='3' or letra=='4' or letra=='5'
-      or letra=='6' or letra=='7' or letra=='8' or letra=='9'):
-    print(True)
+def main():
+    letra = input()
+    x = letra_numero(letra)
+    print(x)
 
-
-else:
-    print(False)
+if  __name__ == '__main__':
+    main()
